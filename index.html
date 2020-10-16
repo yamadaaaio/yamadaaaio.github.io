@@ -3,11 +3,12 @@
     <head></head>
     <body>
         <input type="button" value="実行" onclick="outlog();" />
+        <div class="params">
+        </div>
     </body>
     <script type="text/javascript">
         function outlog() {
-            const params = location.search;
-            window.alert(params);
+            document.querySelector('.params').innerHTML = location.search;
         }
     </script>
 </html>
